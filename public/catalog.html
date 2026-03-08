@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW Catálogo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="barra-navegacion">
+        <ul>
+            <li><a href="index.html">Registro</a></li>
+            <li><a href="catalog.html" class="activo">Catálogo</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="encabezado">
+        <h1>Catálogo Hot Wheels</h1>
+    </header>
+
+    <!-- Catálogo de autos -->
+    <main class="contenedor-catalogo">
+        <div class="catalog-grid" id="catalogGrid">
+            <!-- Las tarjetas se generan dinámicamente -->
+            <div class="cargando">Cargando catálogo...</div>
+        </div>
+    </main>
+
+    <!-- Modal de detalles -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-ventana">
+            <div class="modal-encabezado">
+                <img 
+                    id="modalImage" 
+                    src="" 
+                    alt="" 
+                    class="modal-image"
+                >
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-cuerpo">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <span class="modal-category" id="modalCategory"></span>
+                <p class="modal-description" id="modalDescription"></p>
+                
+                <div class="modal-detalles">
+                    <div class="detalle-elemento">
+                        <span class="detalle-etiqueta">Año</span>
+                        <span class="detalle-valor" id="modalYear"></span>
+                    </div>
+                    <div class="detalle-elemento">
+                        <span class="detalle-etiqueta">Categoría</span>
+                        <span class="detalle-valor" id="modalCategoryDetail"></span>
+                    </div>
+                </div>
+
+                <div class="modal-price" id="modalPrice"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/catalog.js"></script>
+</body>
+</html>

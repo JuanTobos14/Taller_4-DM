@@ -1,0 +1,514 @@
+/* Variables de Colores */
+:root {
+    --azul: #1673A6;
+    --naranja: #E85D1F;
+    --amarillo: #F5DC2A;
+    --rojo: #E53935;
+    --blanco: #FFFFFF;
+    --fondo-oscuro: #1A1A2E;
+    --fondo-medio: #16213E;
+    --fondo-claro: #0F3460;
+    --texto-claro: #FFFFFF;
+    --texto-gris: #CCCCCC;
+    --sombra: 0 4px 15px rgba(0, 0, 0, 0.3);
+    --radio-tarjeta: 12px;
+    --radio-boton: 8px;
+    --transicion: all 0.3s ease;
+}
+
+/* Estilos Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background: var(--fondo-oscuro);
+    color: var(--texto-claro);
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Barra de Navegación */
+.barra-navegacion {
+    background: var(--fondo-medio);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-navegacion a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radio-boton);
+    transition: var(--transicion);
+}
+
+.barra-navegacion a:hover {
+    background: var(--azul);
+}
+
+.barra-navegacion a.activo {
+    background: var(--naranja);
+}
+
+/* Encabezado */
+.encabezado {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--fondo-medio), var(--fondo-claro));
+}
+
+.encabezado h1 {
+    font-size: 2.5rem;
+    color: var(--amarillo);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.encabezado p {
+    color: var(--texto-gris);
+    font-size: 1.1rem;
+}
+
+/* Contenedor del Catálogo */
+.contenedor-catalogo {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Tarjeta */
+.card {
+    background: var(--fondo-claro);
+    border-radius: var(--radio-tarjeta);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    color: var(--texto-claro);
+    margin-bottom: 0.5rem;
+}
+
+.card-category {
+    display: inline-block;
+    background: var(--azul);
+    color: var(--texto-claro);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.card-price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--amarillo);
+    margin-bottom: 1rem;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radio-boton);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transicion);
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background: var(--azul);
+    color: var(--texto-claro);
+}
+
+.btn-primary:hover {
+    background: var(--amarillo);
+    color: var(--naranja);
+}
+
+.btn-secondary {
+    background: var(--naranja);
+    color: var(--texto-claro);
+}
+
+
+.btn-danger {
+    background: var(--rojo);
+    color: var(--texto-claro);
+}
+
+.btn-secondary:hover, .btn-danger:hover {
+    background: var(--amarillo);
+}
+
+.btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-ventana {
+    background: var(--fondo-medio);
+    border-radius: var(--radio-tarjeta);
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.modal-encabezado {
+    position: relative;
+}
+
+.modal-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--amarillo);
+    color: var(--fondo-oscuro);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transicion);
+}
+
+.modal-close:hover {
+    background: var(--rojo);
+    color: var(--blanco);
+}
+
+.modal-cuerpo {
+    padding: 1.5rem;
+}
+
+.modal-title {
+    font-size: 1.8rem;
+    color: var(--amarillo);
+    margin-bottom: 0.5rem;
+}
+
+.modal-category {
+    display: inline-block;
+    background: var(--azul);
+    color: var(--texto-claro);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.modal-description {
+    color: var(--texto-gris);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.modal-detalles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.detalle-elemento {
+    background: var(--fondo-claro);
+    padding: 0.8rem;
+    border-radius: var(--radio-boton);
+    text-align: center;
+}
+
+.detalle-etiqueta {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--texto-gris);
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+
+.detalle-valor {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--texto-claro);
+}
+
+.modal-price {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--amarillo);
+    padding: 1rem;
+    background: var(--fondo-claro);
+    border-radius: var(--radio-boton);
+}
+
+/* Formulario CRUD */
+.contenedor-formulario {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--fondo-medio);
+    border-radius: var(--radio-tarjeta);
+}
+
+.titulo-formulario {
+    color: var(--amarillo);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.formulario-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+
+.formulario-flex:last-child {
+    margin-bottom: 0;
+}
+
+.grupo-formulario {
+    flex: 1;
+    min-width: 150px;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--texto-claro);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea,
+.grupo-formulario select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 2px solid var(--fondo-claro);
+    border-radius: var(--radio-boton);
+    background: var(--fondo-oscuro);
+    color: var(--texto-claro);
+    font-size: 0.95rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus,
+.grupo-formulario select:focus {
+    outline: none;
+    border-color: var(--azul);
+}
+
+.grupo-formulario-completo {
+    flex: 1;
+    min-width: 200px;
+}
+
+.formulario-enviar {
+    flex: 0 0 auto;
+    min-width: 120px;
+}
+
+/* Contenedor de Tabla */
+.contenedor-tabla {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--blanco);
+    border-radius: var(--radio-tarjeta);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+th {
+    background: var(--azul);
+    color: var(--texto-claro);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+td {
+    color: #333333;
+    font-size: 0.95rem;
+    vertical-align: top;
+}
+
+tr:nth-child(even) td {
+    background: #F5F5F5;
+}
+
+tr:hover td {
+    background: #F0F0F0;
+}
+
+.descripcion-cell {
+    max-width: 300px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #555555;
+}
+
+.table-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+/* Estados de Carga y Error */
+.cargando {
+    text-align: center;
+    padding: 3rem;
+    color: var(--texto-gris);
+}
+
+.error-message {
+    background: var(--rojo);
+    color: var(--texto-claro);
+    padding: 1rem;
+    border-radius: var(--radio-boton);
+    text-align: center;
+    margin: 1rem;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3rem;
+    color: var(--texto-gris);
+}
+
+.empty-state h3 {
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .grupo-formulario {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .barra-navegacion ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .encabezado h1 {
+        font-size: 1.8rem;
+    }
+
+    .modal-detalles {
+        grid-template-columns: 1fr;
+    }
+
+    .grupo-formulario {
+        min-width: 100%;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th, td {
+        padding: 0.6rem;
+    }
+
+    .descripcion-cell {
+        max-width: 150px;
+    }
+
+    .table-actions {
+        flex-direction: column;
+    }
+}

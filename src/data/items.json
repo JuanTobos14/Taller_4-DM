@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ratbomb",
+    "description": "Es una representación de una camioneta hot rodded pickup. En la plataforma del camión se pueden encontrar varios componentes.",
+    "precio": 12000,
+    "categoria": "Firts Edition",
+    "año": 2004,
+    "imagen": "https://i.ebayimg.com/images/g/s7oAAOSwKs5mD76I/s-l400.jpg",
+    "id": 1772996020213
+  },
+  {
+    "name": "Piranha Terror",
+    "description": "Es una piraña sobre ruedas. A partir de 2014 se redujo el tamaño de la rueda trasera; a partir de 2015, se reestructuró la fundición y la aleta trasera pasó a ser de plástico.",
+    "precio": 25000,
+    "categoria": "Creature Cars 5-Pack",
+    "año": 2011,
+    "imagen": "https://treasurevalleyantiques.com/cdn/shop/products/20200926_164319_1200x1200.jpg?v=1601256235",
+    "id": 1772996219532
+  }
+]
