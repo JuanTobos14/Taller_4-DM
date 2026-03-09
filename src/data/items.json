@@ -35,20 +35,20 @@
     "imagen": "https://www.elcarrocolombiano.com/wp-content/uploads/2020/07/20200703-MAZDA-3-TURBO-PRIMEROS-DATOS-01.jpg",
     "id": 1772996219541
   },
-  {
+{
     "name": "Batman & Robin Batmobile",
     "description": "Esta es una representación del Batimóvil que aparece en la película Batman y Robin de 1997. Harald Belker fue responsable del diseño del modelo a escala 1:1 para la película",
     "precio": 40000,
-    "categoria": "",
+    "categoria": "Batman",
     "año": 2024,
     "imagen": "https://kinderlogs.in/cdn/shop/files/58.png?v=1739882327",
     "id": 1773010538918
   },
   {
     "name": "Ford Performance Supervan 4",
-    "description": "La Ford SuperVan 4 de Hot Wheels está basada en la furgoneta de carreras eléctrica creada por Ford Europa a partir de la Ford Transit Custom. Tiene cuatro motores eléctricos que producen cerca de 1972 caballos de fuerza y en 2024 se actualizó a la SuperVan 4.2 para intentar competir en la Pikes Peak Hill Climb. En la base del modelo se lee “Ford Supervan4”.\nEn la base del molde se lee Ford Supervan4 .",
+    "description": "La Ford SuperVan 4 , oficialmente conocida como Ford Pro Electric SuperVan , es una furgoneta de carreras totalmente eléctrica de alto rendimiento desarrollada por Ford Europa, basada en la Ford Transit Custom.",
     "precio": 30000,
-    "categoria": "",
+    "categoria": "HW Green Speed",
     "año": 2024,
     "imagen": "https://m.media-amazon.com/images/I/51YwMk22zUL.jpg",
     "id": 1773010941578
