@@ -17,22 +17,22 @@
     "imagen": "https://treasurevalleyantiques.com/cdn/shop/products/20200926_164319_1200x1200.jpg?v=1601256235",
     "id": 1772996219532
   },
-  {
+    {
     "name": "Lamborghini Huracán",
     "description": "Superdeportivo de lujo con un motor V10 atmosférico, diseñado para ofrecer una experiencia de conducción extrema.",
-    "precio": 1500000000,
+    "precio": 150000,
     "categoria": "Superdeportivos",
     "año": 2023,
-    "imagen": "https://acnews.blob.core.windows.net/imggallery/800x600/GAZ_bc4c85519ad34f6284b514ed533f3e5b.jpg",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJV1HLkugS1QxAYinEgEKrwzRBdDZ2IcXR2w&s",
     "id": 1772996219540
   },
   {
     "name": "Mazda 3",
     "description": "Sedán compacto equilibrado, conocido por su diseño Kodo y excelente eficiencia de combustible para uso diario.",
-    "precio": 85000000,
+    "precio": 85000,
     "categoria": "Sedán",
     "año": 2024,
-    "imagen": "https://www.elcarrocolombiano.com/wp-content/uploads/2020/07/20200703-MAZDA-3-TURBO-PRIMEROS-DATOS-01.jpg",
+    "imagen": "https://m.media-amazon.com/images/I/616zlrDT7CL._AC_UF350,350_QL80_.jpg",
     "id": 1772996219541
   },
 {
