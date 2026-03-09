@@ -34,7 +34,7 @@
     "año": 2024,
     "imagen": "https://www.elcarrocolombiano.com/wp-content/uploads/2020/07/20200703-MAZDA-3-TURBO-PRIMEROS-DATOS-01.jpg",
     "id": 1772996219541
-  }
+  },
   {
     "name": "Batman & Robin Batmobile",
     "description": "Esta es una representación del Batimóvil que aparece en la película Batman y Robin de 1997. Harald Belker fue responsable del diseño del modelo a escala 1:1 para la película",
@@ -52,5 +52,5 @@
     "año": 2024,
     "imagen": "https://m.media-amazon.com/images/I/51YwMk22zUL.jpg",
     "id": 1773010941578
-  },
+  }
 ]
