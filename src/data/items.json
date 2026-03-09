@@ -19,7 +19,7 @@
   },
     {
     "name": "Lamborghini Huracán",
-    "description": "Superdeportivo de lujo con un motor V10 atmosférico, diseñado para ofrecer una experiencia de conducción extrema.",
+    "description": "Superdeportivo de lujo, pura agresividad italiana. Un superdeportivo que impone respeto en cualquier pista.",
     "precio": 150000,
     "categoria": "Superdeportivos",
     "año": 2023,
@@ -28,7 +28,7 @@
   },
   {
     "name": "Mazda 3",
-    "description": "Sedán compacto equilibrado, conocido por su diseño Kodo y excelente eficiencia de combustible para uso diario.",
+    "description": "Sedán compacto equilibrado, conocido por su diseño Kodo y Más que un modelo a escala, el estilo no necesita ser gigante para hacerse notar.",
     "precio": 85000,
     "categoria": "Sedán",
     "año": 2024,
